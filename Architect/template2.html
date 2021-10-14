@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TEMPLATE.2</title>
+    <style>
+        /* navbar_styling */
+        *{margin: 0; padding: 0; box-sizing:border-box}
+        ul{ width:100%; background-color: white; list-style-type:none;border: 1px solid transparent; height: 50px; position:sticky;top:0px;}
+        ul>li{display: inline; padding: 10px; color: black; letter-spacing: 3px; font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; padding: 40px;}
+        #br_architect{
+            width: 100%; height:750px;
+            background-image: url("architect.jpg");
+            background-size:cover ;
+        }
+        #br_architect>h1{
+            width:300px; margin: auto;
+            padding: 450px;
+            color: white;
+        }
+        h1 div{display: inline; width: 200px;height: 10px;color: white;background-color: rgba(0, 0, 0, 0.746); border: 1px solid transparent; border-radius: 3px; font-size: larger;}
+        
+        /* project_grid */
+        #project{font-size: 30px;
+        padding-top:50px ; padding-bottom: 10px; padding-left: 15px;}
+        main{ width: 90%; margin: 20px auto; display: grid; grid-template-columns:repeat(3,1fr);grid-template-rows: repeat(2,300px);
+        grid-row-gap:20px ; grid-column-gap:20px;
+        }
+        main div>h3{display: inline; background-color: black;color: white;}
+        /* section */
+        #about,#contact{font-size: 30px;
+        padding-top:80px ;padding-bottom: 10px; padding-left: 15px;}
+        section{ width: 90%; margin: 20px auto; display: grid;
+        grid-template-columns: repeat(4,1fr);
+        grid-gap:20px; }
+
+
+        form>input{
+            padding: 10px; width: 90%; margin: 10px; cursor: pointer; border: 1px solid grey;
+            color: grey;
+        }
+        form>button{ color: white; background-color: black; border: 2px solid black;
+          border-radius: 3px; width: 200px; height: 40px; 
+          letter-spacing: 3px; padding: 5px; margin: 20px;
+          }
+
+        /* map */
+        #map{
+            width: 100%; height:750px;
+            background-image: url("map.jpg");
+            background-size:cover ;
+            margin: 10px;
+        }
+       
+    </style>
+</head>
+<body>
+    <div style="overflow: hidden;">
+   <!-- /*navbar*/ -->
+    <ul>
+        <li><strong>BR</strong>Architects</li>
+        <li>Projects</li>
+        <li>About</li>
+        <li>Contacts</li>
+    </ul>
+    <div id="br_architect">
+        
+        <h1><div>BR</div> Architects</h1>
+    </div>
+
+
+    
+    <div id="project">Projects</div>
+    
+      <hr>  
+    <main> 
+        <div class="box"><h3>BLAB HOUSE</h3><img src="blab.jpg" alt="image"> </div>
+        <div class="box"><h3>BARN HOUSE</h3><img src="house3.jpg" alt="image"></div>
+       <div class="box"><h3> HOUSE</h3><img src="house2.jpg" alt="image"></div>
+        <div class="box"><h3>BRICK HOUSE</h3><img src="house4.jpg" alt="image"></div>
+        
+        <div class="box"><h3>SUMMER HOUSE</h3><img src="house5.jpg" alt="image"></div>
+        <div class="box"><h3>BARN HOUSE</h3><img src="house3.jpg" alt="image"></div>
+        
+    </main>
+    <div id="about">About</div>
+    <hr>
+     <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illum maxime, porro sunt numquam dolorem animi blanditiis ea dignissimos dolores tempora quas accusantium, incidunt, minus optio soluta magni reiciendis. Aliquam, rerum!,
+         Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti non repellendus obcaecati ipsa dicta qui velit reiciendis laboriosam culpa quod unde earum dolores, ea harum? Quas itaque voluptatem ullam labore.
+     </p>
+    <section>
+        <div class="bum"><img src="team2.jpg" alt="image"><p>
+            TANU DWIVEDI <br> CEO FOUNDER
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsa laborum sint aliquam sunt, debitis sapiente magnam autem. Vero adipisci quo magnam cum, delectus praesentium dolore placeat ipsa quidem sit officia.</p>
+            <button>CONTACT </button>
+
+        </p></div>
+        <div class="bum"><img src="team2.jpg" alt="image"><p>
+            TANU DWIVEDI <BR>AECHITECT
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Alias dicta vel exercitationem neque laborum quae, cumque sit fugiat atque voluptates dolor ducimus fuga praesentium commodi minus totam fugit ipsam cum.</p>
+            <button>CONTACT </button>
+
+        </p></div>
+        <div class="bum"><img src="team2.jpg" alt="image"><p>
+            TANU DWIVEDI <br>
+            ARCHITECT
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis perferendis ad reprehenderit hic, accusamus molestiae debitis nemo quae rem vitae dignissimos id quibusdam eum alias necessitatibus, adipisci dolorem aperiam quia.</p>
+            <button>CONTACT </button>
+        </p></div>
+    </section>
+
+    <div id="contact">Contact</div>
+    <hr>
+    <p style="margin:10px;">Lets get in touch and talk about our next project</p>
+    <form style="margin: 20px;">
+        <input type="text" name="name" placeholder="NAME" ><br>
+        <input type="number" name="name" placeholder="CONTACT"><br>
+        <input type="text" name="subject" placeholder="SUBJECT"><br>
+        <input type="commment" name="comment" placeholder="COMMENT"><br>
+        <button>SEND MESSAGE</button>
+        </form>
+        
+
+        <div id="map">  </div>
+        <div style="color: white; background-color: black; width: 100%; height: 70px; margin: 10px; text-align: center;
+        padding-top: 12px; font-size: 25px;">
+            Powered by W3 school
+        </div>
+</div>
+
+</body>
+</html>
